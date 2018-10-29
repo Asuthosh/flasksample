@@ -1,0 +1,12 @@
+{% extends 'master.html' %}
+
+
+{% block mybody%}
+<h1> Contact Us</h1>
+<form method="POST" action="/send"> 
+    <input type="text" name="name" placeholder="Enter Name">
+    <input type="email" name="email" placeholder="Enter email">
+    <button class="btn btn-success" type="submit"> Send</button>
+</form> 
+
+{% endblock %}

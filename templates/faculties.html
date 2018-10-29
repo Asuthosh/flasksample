@@ -1,0 +1,18 @@
+{% extends 'master.html' %}
+
+
+{% block mybody%}
+
+
+<h1 class="display-6">Faculties of Adi Sankara  College</h1>
+<ul>
+    {% for faculty in facultydata %}
+    <li class="list-group-item"><b>{{faculty.dept}}</b> </li>
+    <li class="list-group-item">{{faculty.name}} </li>
+    <li class="list-group-item">{{faculty.mob}} </li>
+    <li class="list-group-item">{{faculty.email}} </li>
+    <br>
+    {% endfor %}
+</ul>
+
+{% endblock %}
